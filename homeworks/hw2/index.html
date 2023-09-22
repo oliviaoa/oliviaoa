@@ -1,6 +1,83 @@
-<!DOCTYPE html>
 <html>
-    <body>
-        Homework 1
-    </body>
+	<head>
+		<title>Fiddling with shapes</title>
+		<!-- What file should we link in this <head> tag? -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+		<style>
+			#container .square {
+				background-color: #e67e22;
+			}
+			#third-row .circle {
+				background-color: #de6868;
+			}
+			#container .square.fancy {
+    			background: #6392c0;
+			}
+			.circle.fancy {
+				border-style: dotted;
+			}		
+			#container .row .circle:first-child {
+				opacity: 0;
+			}
+			#container .circle.fancy,
+			#container .square.fancy.green {
+    			background: #6392c0;
+			}
+			.circle.green {
+				background: #6392c0;
+			}
+			#container .circle:hover {
+				opacity: 0.5;
+			}
+			#second-row .circle:hover {
+				transform: scale(1.25)
+			}
+		</style>
+	</head>
+<body>
+	<div id="container">
+		<div id="first-row" class="row">
+			<div class="square"></div>
+			<div class="circle green"></div>
+			<div class="square"></div>
+			<div class="circle fancy"></div>
+			<div class="circle"></div>
+		</div>
+
+
+		<div id="second-row" class="row">
+			<div class="circle"></div>
+			<div class="square fancy"></div>
+			<div class="circle fancy"></div>
+			<div class="circle"></div>
+			<div class="circle fancy green"></div>
+		</div>
+
+		<div id="third-row" class="row">
+			<div class="circle"></div>
+			<div class="circle green"></div>
+			<div class="circle"></div>
+			<div class="square fancy"></div>
+			<div class="square"></div>
+		</div>
+
+		<div id="fourth-row" class="row">
+			<div class="square"></div>
+			<div class="circle"></div>
+			<div class="circle fancy"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+		</div>
+
+		<div id="fifth-row" class="row">
+			<div class="circle"></div>
+			<div class="circle fancy"></div>
+			<div class="circle"></div>
+			<div class="square"></div>
+			<div class="circle green"></div>
+		</div>
+
+		<li><a href="wireframes.html">Click to view wireframe responses</a></li>
+	</div>
+</body>
 </html>
