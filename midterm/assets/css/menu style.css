@@ -1,0 +1,87 @@
+/* Reset some default browser styles */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: Fauna One;
+}
+
+/* Style the header and navigation bar */
+
+.header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px; /* Added padding for spacing */
+}
+.logo {
+    margin-left: 8px;
+}
+.phone-number {
+    padding-right: 10px;
+}
+.order-button {
+    background-color: #ff9505;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.2s; /* Add transition for scaling */
+}
+.order-button:hover {
+    background-color: #e88003;
+}
+.order-button:active {
+    transform: scale(1.1); /* Increase in size when pressed */
+}
+
+.menu-design {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto; /* Maintain image aspect ratio */
+    z-index: -1;
+}
+
+.menu-design img {
+    width: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+}
+
+.nav-buttons {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin-top: 15px;
+    padding: 0;
+    color:#fff;
+}
+
+.nav-buttons li {
+    margin-right: 10px;
+    color: #fff;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+}
+
+.nav-buttons a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.content {
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+/* Style the main content */
+main {
+    padding: 20px;
+}
+
