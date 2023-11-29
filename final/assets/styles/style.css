@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap');
+
+
+body,html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fffffff0;
+    text-shadow: 2px 2px 4px #696969;
+    font-size: 7em;
+    background: radial-gradient(ellipse at center, #6392ff, #c9d5f9, #FFFFFF);
+}
+
+#welcome-text {
+    border-right: 2px solid;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 3s steps(9) forwards, blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 4em; } 
+}
+#time {
+    font-size: 130%;
+}
+#date {
+    font-family: Urbanist;
+    font-size: 50%;
+}
+#welcome-arrow-up {
+    position: fixed;
+    bottom: 5px; 
+    left: 50%;
+    width: 8%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: color 0.3s ease; 
+}
+#main-arrow-up {
+    position: fixed;
+    bottom: 5px; 
+    left: 10%;
+    width: 6%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: color 0.3s ease; 
+}
+#menu {
+    position: fixed;
+    bottom: 10px;
+    left: 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button {
+    background: #95ACFF;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 25px;
+    border: none;
+    padding: 20px 27px;
+    border-radius: 4px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: inset;
+}
+.home-button {
+    background: #FFFFFF;
+    color: #6392ff;
+    font-weight: bold;
+    font-size: 25px;
+    border: none;
+    padding: 20px 27px;
+    border-radius: 4px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: inset;
+    
+}
+.button:hover {
+    background-color: #A6B9FF;
+}
+.containertodo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: radial-gradient(ellipse at center, #FFFFFF, #c9d5f9, #6392ff);
+}
+#todo-container {
+    margin-top: 20px; 
+}
+#todo-add-btn {
+    padding: 10px 13.5px;
+    font-size: 20px;
+}
+#todo-input {
+    padding: 10px;
+    margin-right: 2px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #95ACFF;
+}
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#todo-list li {
+    font-size: 22px;
+    font-weight: bold;
+    background: #FFFFFF;
+    color: #6392ff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#todo-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.fade-in {
+    animation: fadeInAnimation ease-in-out 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0.25;
+        transform: translateY(-20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
